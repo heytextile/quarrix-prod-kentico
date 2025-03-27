@@ -1,3 +1,5 @@
+/* Version 1.0.0 */
+
 (function () {
     const videoSection = document.querySelector('.quarrix_video_section__video');
     
