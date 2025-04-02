@@ -2,1606 +2,1669 @@
 /**************** GLOBAL TXTL CLASSES ******************/
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
-  }
-  
-  .txtl-wrapper {
-    max-width: 1440px;
-    background-color: #fff;
-    display: block;
-    margin: auto auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  /* Start style for Quarrix Homepage */
-  /* Quarrix Hero */
-  .txtl-wrapper .quarrix_hero {
-    background-image: url('https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/quarrix-hero-image.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 120px 20px;
-  }
-  
-  .txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper h1 {
-    color: #fff;
-    font-size: 82px;
-    line-height: 87px;
-    font-weight: 700;
-    max-width: 850px;
-    letter-spacing: 0px;
-    margin-bottom: 26px;
-  }
-  
-  .txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper p {
-    color: #fff;
-    font-size: 26px;
-    line-height: 42px;
-    max-width: 634px;
-    letter-spacing: 0px;
-    margin-bottom: 45px;
-  }
-  
-  .txtl-wrapper .quarrix_hero .quarrix_hero__button_wrapper {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* .txtl-wrapper {
+  max-width: 1440px;
+  background-color: #fff;
+  display: block;
+  margin: auto auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* Start style for Quarrix Homepage */
+/* Quarrix Hero */
+.txtl-wrapper .quarrix_hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0px;
+}
+
+.txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper h1 {
+  color: #fff;
+  font-size: 82px;
+  line-height: 87px;
+  font-weight: 700;
+  max-width: 850px;
+  letter-spacing: 0px;
+  margin-bottom: 26px;
+  text-align: left !important;
+}
+
+.txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper p {
+  color: #fff;
+  font-size: 26px;
+  line-height: 42px;
+  max-width: 634px;
+  letter-spacing: 0px;
+  margin-bottom: 45px;
+  text-align: left !important;
+}
+
+.txtl-wrapper .quarrix_hero .quarrix_hero__button_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.txtl-wrapper .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 18px 35px;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 2px;
+  margin: 0;
+  transition: 250ms ease-in-out background-color, 250ms ease-in-out color, 250ms ease-in-out border;
+}
+
+.txtl-wrapper .btn.btn-white {
+  color: #055641 !important;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.txtl-wrapper .btn.btn-white:hover {
+  color: #fff !important;
+  background-color: transparent;
+}
+
+.txtl-wrapper .btn.btn-white:hover svg {
+  fill: #fff;
+}
+
+.txtl-wrapper .btn.btn-transparent {
+  color: #fff !important;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.txtl-wrapper .btn.btn-transparent:hover {
+  color: #055641 !important;
+  background-color: #fff;
+}
+
+.txtl-wrapper .btn.btn-transparent:hover svg {
+  fill: #055641;
+}
+
+/* Multi column */
+.txtl-wrapper .quarrix_multi_column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item {
+  border-radius: 8px;
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  text-decoration: none;
+}
+
+.txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-1 {
+  background-color: #40864B;
+  border-radius: 0 8px 8px 0;
+}
+
+.txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-2 {
+  background-color: #515350;
+}
+
+.txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-3 {
+  background-color: #88BAD3;
+  border-radius: 8px 0 0 8px;
+}
+
+.txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item img {
+  width: 100%;
+  object-fit: contain;
+  max-width: 350px;
+}
+
+.txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #fff;
+}
+
+.txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item svg {
+  position: absolute;
+  right: 15px;
+  bottom: 11px;
+}
+
+/* Video section */
+.txtl-wrapper .quarrix_video_section {
+  padding: 130px 0;
+  position: relative;
+}
+
+.txtl-wrapper .quarrix_video_section .quarrix_video_section__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.txtl-wrapper .quarrix_video_section__text_wrapper {
+  width: 40%;
+}
+
+.txtl-wrapper .quarrix_video_section__video_wrapper {
+  width: 60%;
+}
+
+.txtl-wrapper .quarrix_video_section__video_wrapper .quarrix_video_section__video {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.txtl-wrapper .quarrix_video_section__video_wrapper video {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.txtl-wrapper .quarrix_video_section .quarrix_video_section__side_image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 0;
+  max-width: 380px;
+}
+
+.txtl-wrapper .quarrix_video_section__text_wrapper h2 {
+  color: #055641 !important;
+  font-weight: 700;
+  letter-spacing: 0px;
+  font-size: 55px;
+  line-height: 60px;
+  margin: 0 0 15px;
+  text-align: left !important;
+}
+
+.txtl-wrapper .quarrix_video_section__text_wrapper p {
+  color: #0B0B0B !important;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  text-align: left !important;
+}
+
+.txtl-wrapper .quarrix_video_section__button_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.txtl-wrapper .btn.btn-green {
+  color: #fff !important;
+  background-color: #055641;
+  border: 1px solid #055641;
+}
+
+.txtl-wrapper .btn.btn-green:hover {
+  color: #055641 !important;
+  background-color: transparent;
+}
+
+.txtl-wrapper .btn.btn-green:hover svg {
+  fill: #055641;
+}
+
+.txtl-wrapper .btn.btn-transparent-green {
+  color: #055641 !important;
+  background-color: transparent;
+  border: 1px solid #055641;
+}
+
+.txtl-wrapper .btn.btn-transparent-green:hover {
+  color: #fff !important;
+  background-color: #055641;
+}
+
+.txtl-wrapper .btn.btn-transparent-green:hover svg {
+  fill: #fff;
+}
+
+.txtl-wrapper .quarrix_video_section .quarrix_video_section__side_svg {
+  position: absolute;
+  left: 0;
+  bottom: -324px;
+  z-index: 1;
+}
+
+/* Quarrix products section */
+.txtl-wrapper .quarrix_product_section {
+  padding: 120px 0;
+  background-color: #F2F6F5;
+  position: relative;
+  text-align: center;
+}
+
+.txtl-wrapper .quarrix_product_section .quarrix_product_section__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.txtl-wrapper .quarrix_product_section h2 {
+  text-align: center;
+  color: #055641 !important;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 79px;
+  margin: 0 0 20px;
+  letter-spacing: 0px;
+}
+
+.txtl-wrapper .quarrix_product_section p {
+  text-align: center;
+  color: #000 !important;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0 auto 50px;
+  letter-spacing: 0px;
+  max-width: 817px;
+}
+
+.txtl-wrapper .quarrix_product_section .quarrix_product_section__item {
+  min-height: 300px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.txtl-wrapper .quarrix_product_section .quarrix_product_section__item .quarrix_product_section__item-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.txtl-wrapper .quarrix_product_section .quarrix_product_section__item .quarrix_product_section__item-title-wrapper p {
+  margin: 0;
+  color: #fff !important;
+  letter-spacing: 0px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.txtl-wrapper .quarrix_product_section .quarrix_product_section__item .quarrix_product_section__item-title-wrapper svg {
+  width: 30px;
+}
+
+.txtl-wrapper .quarrix_product_section .quarrix_product_section__button {
+  margin: 70px auto 0;
+  display: inline-flex;
+  position: relative;
+  z-index: 1;
+}
+
+.txtl-wrapper .quarrix_product_section .quarrix_product_section__side-vector {
+  position: absolute;
+  right: 0;
+  bottom: -300px;
+  z-index: 0;
+  max-width: 350px;
+}
+
+/* Quarrix Gallery */
+.txtl-wrapper .quarrix_ventilation_gallery {
+  padding: 130px 20px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__button {
+  display: inline-flex;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__wrapper_top {
+  display: flex;
+  gap: 15px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left {
+  width: 60%;
+  display: flex;
+  gap: 15px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_right {
+  width: 40%;
+  display: flex;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left_text {
+  width: 60%;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left_image {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left_image .quarrix_ventilation_gallery__top_left_image_box {
+  width: 100%;
+  height: 100%;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_right img {
+  max-height: 595px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left img {
+  max-height: 290px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery h2 {
+  color: #055641 !important;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 53px;
+  margin: 0 0 30px;
+  letter-spacing: 0px;
+  text-align: left !important;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery p {
+  color: #000 !important;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0 auto 20px;
+  letter-spacing: 0px;
+  text-align: left !important;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__wrapper_bottom {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left {
+  width: 60%;
+  display: flex;
+  gap: 15px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right {
+  width: 40%;
+  display: flex;
+  gap: 15px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_two-image {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_two-image img:first-child {
+  max-height: 260px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_two-image img:last-child {
+  max-height: 400px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_one-image {
+  width: 60%;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_one-image img {
+  max-height: 675px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left img:first-child {
+  max-height: 260px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left img:last-child {
+  max-height: 400px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_right img {
+  max-height: 260px;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_right .quarrix_ventilation_gallery__bottom_right_right_holder {
+  max-height: 400px;
+  height: 100%;
+  background-color: transparent;
+}
+
+.txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__side_vector {
+  position: absolute;
+  right: 0;
+  right: 0;
+  bottom: -290px;
+  z-index: 0;
+  max-width: 400px;
+}
+
+/* Quarrix banner section */
+.txtl-wrapper .quarrix_banner {
+  padding: 0 20px;
+  background-color: #055641;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  box-shadow: 0px 4px 14px 0px #00000040;
+}
+
+.txtl-wrapper .quarrix_banner .quarrix_banner__row {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  letter-spacing: 0px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left {
+  width: 70%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left::after {
+  content: '';
+  position: absolute;
+  right: -140px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-image: url('data:image/svg+xml,%3Csvg%20width%3D%22292%22%20height%3D%22317%22%20viewBox%3D%220%200%20292%20317%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M159%20317L292%20162L161.736%200H0V317H159Z%22%20fill%3D%22%23055641%22%2F%3E%3Cg%20clip-path%3D%22url%28%23clip0_2236_18%29%22%3E%3Cmask%20id%3D%22mask0_2236_18%22%20style%3D%22mask-type%3Aalpha%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%22159%22%20y%3D%22-4%22%20width%3D%22701%22%20height%3D%22321%22%3E%3Cpath%20d%3D%22M271.921%20163.039L159%20-4H379.379H860V317H159L271.921%20163.039Z%22%20fill%3D%22%23055641%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url%28%23mask0_2236_18%29%22%3E%3Cpath%20d%3D%22M244%20162L130.5%20-4H158.5L292%20162L158.5%20317.5H129.5L244%20162Z%22%20fill%3D%22black%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Cdefs%3E%3CclipPath%20id%3D%22clip0_2236_18%22%3E%3Crect%20width%3D%22133%22%20height%3D%22317%22%20fill%3D%22white%22%20transform%3D%22translate%28159%29%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3C%2Fsvg%3E');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+
+.txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right_img {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  max-width: 530px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__button {
+  position: relative;
+  z-index: 1;
+}
+
+.txtl-wrapper .quarrix_banner .quarrix_banner__vector {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 100%;
+  width: auto;
+}
+
+/* Cagalog section */
+.txtl-wrapper .quarrix_catalog__wrapper {
+  padding: 200px 20px 80px;
+  margin: -130px 0 0;
+  background: linear-gradient(0deg, rgba(217, 217, 217, 0.14) 58.58%, rgba(115, 115, 115, 0.14) 100%);
+}
+
+.txtl-wrapper .quarrix_catalog__wrapper h2 {
+  text-align: center;
+  margin: 0 0 40px;
+  letter-spacing: 0px;
+  color: #000 !important;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.txtl-wrapper .quarrix_catalog__wrapper .quarrix_catalog__iframe {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #E4E4E4;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.txtl-wrapper .quarrix_catalog__wrapper .quarrix_catalog__iframe iframe {
+  width: 100%;
+  height: 650px;
+  border: none;
+}
+
+/* Quarrix faq section */
+.txtl-wrapper .quarrix_faq_section {
+  padding: 80px 20px 100px;
+  text-align: center;
+}
+
+.txtl-wrapper .quarrix_faq_section h2 {
+  text-align: center;
+  margin: 0 0 40px;
+  letter-spacing: 0px;
+  color: #000 !important;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_title_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #B1B1B1;
+  padding-bottom: 20px;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item:last-child .quarrix_faq_section__item_title_wrapper {
+  border-bottom: 1px solid transparent;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_title_wrapper .quarrix_faq_section__item_question {
+  color: #000 !important;
+  font-size: 25px;
+  text-align: left;
+  line-height: 57px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  margin: 15px 0 0;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_answer {
+  color: #fff;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  margin: 0;
+  padding: 25px 40px;
+  text-align: left;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_answer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_answer_wrapper ul {
+  color: #fff;
+  text-align: left;
+  list-style: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_close_icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_close_icon span {
+  background-color: #000;
+  width: 3px;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  transform: rotate(90deg);
+  transition: 250ms ease-in-out transform;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_close_icon span:first-child {
+  transform: rotate(0deg);
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item.active .quarrix_faq_section__item_close_icon span:first-child {
+  transform: rotate(90deg);
+}
+
+.quarrix_faq_section__item_answer_wrapper {
+  background-color: #055641;
+  border-radius: 4px;
+  overflow: hidden;
+  max-height: 0;
+  transition: 250ms ease-in-out max-height;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item.active .quarrix_faq_section__item_answer_wrapper {
+  max-height: 600px;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item.active .quarrix_faq_section__item_title_wrapper {
+  border-bottom: 1px solid transparent;
+}
+
+.txtl-wrapper .quarrix_faq_section .quarrix_faq_section__button {
+  display: inline-flex;
+  margin: 80px auto 0;
+}
+
+/* Quarrix map section */
+.txtl-wrapper .quarrix_map_section {
+  padding: 120px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.txtl-wrapper .quarrix_map_section .quarrix_map_section__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.txtl-wrapper .quarrix_map_section .quarrix_map_section__content {
+  max-width: 415px;
+  box-shadow: 0px 2px 7px 0px #00000063;
+  border-radius: 2px;
+  padding: 40px 30px;
+  background-color: rgba(5, 86, 65, 0.9);
+}
+
+.txtl-wrapper .quarrix_map_section .quarrix_map_section__content h2 {
+  color: #fff;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  margin: 0 0 15px;
+}
+
+.txtl-wrapper .quarrix_map_section .quarrix_map_section__content p {
+  color: #fff;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0 0 30px;
+}
+
+.txtl-wrapper .quarrix_map_section .quarrix_map_section__content .quarrix_map_section__button {
+  display: inline-flex;
+}
+
+/* Quarrix Homepage responsive */
+@media(max-width: 992px) {
   .txtl-wrapper .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    padding: 18px 35px;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 2px;
-    margin: 0;
-    transition: 250ms ease-in-out background-color, 250ms ease-in-out color, 250ms ease-in-out border;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 15px 30px;
   }
-  
-  .txtl-wrapper .btn.btn-white {
-    color: #055641;
-    background-color: #fff;
-    border: 1px solid #fff;
+
+  .txtl-wrapper .quarrix_hero {
+    padding: 60px 0;
   }
-  
-  .txtl-wrapper .btn.btn-white:hover {
-    color: #fff;
-    background-color: transparent;
+
+  .txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper h1 {
+    font-size: 50px;
+    line-height: 55px;
   }
-  
-  .txtl-wrapper .btn.btn-white:hover svg {
-    fill: #fff;
+
+  .txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper p {
+    font-size: 23px;
+    line-height: 32px;
   }
-  
-  .txtl-wrapper .btn.btn-transparent {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-  }
-  
-  .txtl-wrapper .btn.btn-transparent:hover {
-    color: #055641;
-    background-color: #fff;
-  }
-  
-  .txtl-wrapper .btn.btn-transparent:hover svg {
-    fill: #055641;
-  }
-  
-  /* Multi column */
+
   .txtl-wrapper .quarrix_multi_column {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6px;
-    margin-top: 6px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item {
-    border-radius: 8px;
-    padding: 50px 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    text-decoration: none;
-  }
-  
-  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-1 {
-    background-color: #40864B;
-    border-radius: 0 8px 8px 0;
-  }
-  
-  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-2 {
-    background-color: #515350;
-  }
-  
-  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-3 {
-    background-color: #88BAD3;
-    border-radius: 8px 0 0 8px;
-  }
-  
-  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item img {
-    width: 100%;
-    object-fit: contain;
-    max-width: 350px;
-  }
-  
-  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item p {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0px;
-    color: #fff;
-  }
-  
-  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item svg {
-    position: absolute;
-    right: 15px;
-    bottom: 11px;
-  }
-  
-  /* Video section */
-  .txtl-wrapper .quarrix_video_section {
-    padding: 130px 0;
-    position: relative;
-  }
-  
-  .txtl-wrapper .quarrix_video_section .quarrix_video_section__wrapper {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    position: relative;
-    z-index: 2;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .txtl-wrapper .quarrix_video_section__text_wrapper {
-    width: 40%;
-  }
-  
-  .txtl-wrapper .quarrix_video_section__video_wrapper {
-    width: 60%;
-  }
-  
-  .txtl-wrapper .quarrix_video_section__video_wrapper .quarrix_video_section__video {
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #fff;
-    cursor: pointer;
-  }
-  
-  .txtl-wrapper .quarrix_video_section__video_wrapper video {
-    width: 100%;
-    object-fit: contain;
-    border-radius: 8px;
-  }
-  
-  .txtl-wrapper .quarrix_video_section .quarrix_video_section__side_image {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    z-index: 0;
-    max-width: 380px;
-  }
-  
-  .txtl-wrapper .quarrix_video_section__text_wrapper h2 {
-    color: #055641;
-    font-weight: 700;
-    letter-spacing: 0px;
-    font-size: 55px;
-    line-height: 60px;
-    margin: 0 0 15px;
-  }
-  
-  .txtl-wrapper .quarrix_video_section__text_wrapper p {
-    color: #0B0B0B;
-    font-weight: 400;
-    letter-spacing: 0px;
-    font-size: 17px;
-    line-height: 28px;
-    margin-bottom: 30px;
-  }
-  
-  .txtl-wrapper .quarrix_video_section__button_wrapper {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .txtl-wrapper .btn.btn-green {
-    color: #fff;
-    background-color: #055641;
-    border: 1px solid #055641;
-  }
-  
-  .txtl-wrapper .btn.btn-green:hover {
-    color: #055641;
-    background-color: transparent;
-  }
-  
-  .txtl-wrapper .btn.btn-green:hover svg {
-    fill: #055641;
-  }
-  
-  .txtl-wrapper .btn.btn-transparent-green {
-    color: #055641;
-    background-color: transparent;
-    border: 1px solid #055641;
-  }
-  
-  .txtl-wrapper .btn.btn-transparent-green:hover {
-    color: #fff;
-    background-color: #055641;
-  }
-  
-  .txtl-wrapper .btn.btn-transparent-green:hover svg {
-    fill: #fff;
-  }
-  
-  .txtl-wrapper .quarrix_video_section .quarrix_video_section__side_svg {
-    position: absolute;
-    left: 0;
-    bottom: -324px;
-    z-index: 1;
-  }
-  
-  /* Quarrix products section */
-  .txtl-wrapper .quarrix_product_section {
-    padding: 120px 0;
-    background-color: #F2F6F5;
-    position: relative;
-    text-align: center;
-  }
-  
+
   .txtl-wrapper .quarrix_product_section .quarrix_product_section__row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-    z-index: 1;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .txtl-wrapper .quarrix_product_section h2 {
-    text-align: center;
-    color: #055641;
-    font-weight: 700;
-    font-size: 68px;
-    line-height: 79px;
-    margin: 0 0 20px;
-    letter-spacing: 0px;
-  }
-  
-  .txtl-wrapper .quarrix_product_section p {
-    text-align: center;
-    color: #000;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 28px;
-    margin: 0 auto 50px;
-    letter-spacing: 0px;
-    max-width: 817px;
-  }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__item {
-    min-height: 300px;
-    max-height: 300px;
-    display: flex;
+
+  .txtl-wrapper .quarrix_video_section .quarrix_video_section__wrapper {
     flex-direction: column;
-    justify-content: end;
-    padding: 20px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-decoration: none;
   }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__item.product-1 {
-    background-image: url('https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/attic-protection-image.png');
-  }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__item.product-2 {
-    background-image: url('https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/roof-protection-image.png');
-  }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__item.product-3 {
-    background-image: url('https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/wall-protection-image.png');
-  }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__item.product-4 {
-    background-image: url('https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/composite-tile-image.png');
-  }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__item .quarrix_product_section__item-title-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-  }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__item .quarrix_product_section__item-title-wrapper p {
-    margin: 0;
-    color: #fff;
-    letter-spacing: 0px;
-    font-weight: 800;
-    font-size: 25px;
-  }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__item .quarrix_product_section__item-title-wrapper svg {
-    width: 30px;
-  }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__button {
-    margin: 70px auto 0;
-    display: inline-flex;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .txtl-wrapper .quarrix_product_section .quarrix_product_section__side-vector {
-    position: absolute;
-    right: 0;
-    bottom: -300px;
-    z-index: 0;
-    max-width: 350px;
-  }
-  
-  /* Quarrix Gallery */
-  .txtl-wrapper .quarrix_ventilation_gallery {
-    padding: 130px 20px;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery img {
+
+  .txtl-wrapper .quarrix_video_section__video_wrapper,
+  .txtl-wrapper .quarrix_video_section__text_wrapper {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
   }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__button {
-    display: inline-flex;
+
+  .txtl-wrapper .quarrix_video_section__button_wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .txtl-wrapper .quarrix_video_section .quarrix_video_section__side_image {
+    display: none;
+  }
+
+  .txtl-wrapper .quarrix_ventilation_gallery {
+    padding: 60px 20px;
   }
   
   .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__wrapper_top {
-    display: flex;
-    gap: 15px;
+    flex-direction: column;
   }
-  
+
   .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left {
-    width: 60%;
-    display: flex;
-    gap: 15px;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
   }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_right {
-    width: 40%;
-    display: flex;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left_text {
-    width: 60%;
-  }
-  
+
   .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left_image {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left_image .quarrix_ventilation_gallery__top_left_image_box {
+    flex-direction: row;
     width: 100%;
-    height: 100%;
   }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_right img {
-    max-height: 595px;
+
+  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left_text {
+    width: 100%;
   }
-  
+
+  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_right {
+    width: 100%;
+  }
+
   .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left img {
-    max-height: 290px;
+    max-height: 200px;
   }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery h2 {
-    color: #055641;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 53px;
-    margin: 0 0 30px;
-    letter-spacing: 0px;
+
+  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_right img {
+    max-height: 400px;
   }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery p {
-    color: #000;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 28px;
-    margin: 0 auto 20px;
-    letter-spacing: 0px;
-  }
-  
+
   .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__wrapper_bottom {
-    display: flex;
-    gap: 15px;
-    position: relative;
-    z-index: 1;
+    flex-direction: column;
   }
-  
+
   .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left {
-    width: 60%;
-    display: flex;
-    gap: 15px;
+    width: 100%
   }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right {
-    width: 40%;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_two-image {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
+
   .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_two-image img:first-child {
-    max-height: 260px;
+    max-height: 200px;
   }
-  
+
+  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right {
+    width: 100%
+  }
+
+  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_one-image img {
+    max-height: 550px;
+  }
+
   .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_two-image img:last-child {
-    max-height: 400px;
+    max-height: 335px;
   }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_one-image {
+
+  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left img:first-child {
+    max-height: 200px;
+  }
+
+  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_right img {
+    max-height: 200px;
+  } 
+
+  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left img:last-child {
+    max-height: 335px;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right {
+    width: 35%;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left {
+    width: 65%;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left h2 {
+    font-size: 35px;
+    line-height: 37px;
+  }
+
+  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_title_wrapper .quarrix_faq_section__item_question {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_answer {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px 25px;
+  }
+
+  .txtl-wrapper .quarrix_map_section .quarrix_map_section__content h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .txtl-wrapper .quarrix_map_section .quarrix_map_section__content p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .txtl-wrapper .quarrix_map_section {
+    padding: 60px 0;
+  }
+
+  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item {
+    padding: 30px 40px;
+  }
+
+  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__side_vector {
+    bottom: -340px;
+    max-width: 200px;
+  }
+
+  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-2 {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-3 {
+    border-radius: 0 8px 8px 0;
+  }
+
+  .txtl-wrapper .quarrix_video_section {
+    padding: 60px 0;
+  }
+
+  .txtl-wrapper .quarrix_video_section__text_wrapper h2 {
+    font-size: 35px;
+    line-height: 39px;
+  }
+
+  .txtl-wrapper .quarrix_video_section .quarrix_video_section__side_svg {
+    bottom: -298px;
+    max-width: 180px;
+  }
+
+  .txtl-wrapper .quarrix_product_section {
+    padding: 60px 0;
+  }
+
+  .txtl-wrapper .quarrix_product_section h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .txtl-wrapper .quarrix_product_section .quarrix_product_section__item {
+    min-height: 250px;
+    max-height: 250px;
+  }
+
+  .txtl-wrapper .quarrix_catalog__wrapper h2 {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0 0 20px;
+  }
+
+  .txtl-wrapper .quarrix_catalog__wrapper .quarrix_catalog__iframe iframe {
+    height: 300px;
+  }
+
+  .txtl-wrapper .quarrix_faq_section {
+    padding: 60px 20px;
+  }
+
+  .txtl-wrapper .quarrix_faq_section h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .txtl-wrapper .quarrix_ventilation_gallery h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__button {
+    margin: 50px auto 0;
+  }
+
+  .txtl-wrapper .quarrix_catalog__wrapper .quarrix_catalog__iframe {
+    padding: 20px 10px;
+  }
+
+  .txtl-wrapper .quarrix_catalog__wrapper {
+    padding: 175px 20px 50px;
+  }
+}
+
+@media(max-width: 750px) {
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right_img {
+    max-width: 420px;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right {
+    width: 40%;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left {
     width: 60%;
   }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_one-image img {
-    max-height: 695px;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left {
-    width: 50%;
-    display: flex;
+}
+
+@media(max-width: 576px) {
+  .txtl-wrapper .quarrix_hero .quarrix_hero__button_wrapper {
     flex-direction: column;
-    gap: 15px;
+    align-items: start;
   }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left img:first-child {
-    max-height: 260px;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left img:last-child {
-    max-height: 400px;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_right img {
-    max-height: 260px;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_right .quarrix_ventilation_gallery__bottom_right_right_holder {
-    max-height: 400px;
-    height: 100%;
-    background-color: transparent;
-  }
-  
-  .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__side_vector {
-    position: absolute;
-    right: 0;
-    right: 0;
-    bottom: -290px;
-    z-index: 0;
-    max-width: 400px;
-  }
-  
-  /* Quarrix banner section */
-  .txtl-wrapper .quarrix_banner {
+
+  .txtl-wrapper .quarrix_multi_column {
+    grid-template-columns: repeat(1, 1fr);
     padding: 0 20px;
-    background-color: #055641;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    border-radius: 8px;
-    box-shadow: 0px 4px 14px 0px #00000040;
   }
-  
+
+  .txtl-wrapper .quarrix_product_section .quarrix_product_section__row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item {
+    border-radius: 8px !important;
+  }
+
   .txtl-wrapper .quarrix_banner .quarrix_banner__row {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left h2 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 57px;
-    letter-spacing: 0px;
-    color: #fff;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left {
-    width: 70%;
-    padding: 70px 0;
-    position: relative;
-  }
-  
-  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left::after {
-    content: '';
-    position: absolute;
-    right: -70px;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%22292%22%20height%3D%22317%22%20viewBox%3D%220%200%20292%20317%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M159%20317L292%20162L161.736%200H0V317H159Z%22%20fill%3D%22%23055641%22%2F%3E%3Cg%20clip-path%3D%22url%28%23clip0_2236_18%29%22%3E%3Cmask%20id%3D%22mask0_2236_18%22%20style%3D%22mask-type%3Aalpha%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%22159%22%20y%3D%22-4%22%20width%3D%22701%22%20height%3D%22321%22%3E%3Cpath%20d%3D%22M271.921%20163.039L159%20-4H379.379H860V317H159L271.921%20163.039Z%22%20fill%3D%22%23055641%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url%28%23mask0_2236_18%29%22%3E%3Cpath%20d%3D%22M244%20162L130.5%20-4H158.5L292%20162L158.5%20317.5H129.5L244%20162Z%22%20fill%3D%22black%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3Cdefs%3E%3CclipPath%20id%3D%22clip0_2236_18%22%3E%3Crect%20width%3D%22133%22%20height%3D%22317%22%20fill%3D%22white%22%20transform%3D%22translate%28159%29%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3C%2Fsvg%3E');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  
-  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right {
-    width: 30%;
-    display: flex;
-    justify-content: end;
-  }
-  
-  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right_img {
-    position: absolute;
-    height: 100%;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    max-width: 530px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__button {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .txtl-wrapper .quarrix_banner .quarrix_banner__vector {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 0;
-    height: 100%;
-    width: auto;
-  }
-  
-  /* Cagalog section */
-  .txtl-wrapper .quarrix_catalog__wrapper {
-    padding: 200px 20px 80px;
-    max-width: 1250px;
-    margin: -130px auto 0;
-    background: linear-gradient(0deg, rgba(217, 217, 217, 0.14) 58.58%, rgba(115, 115, 115, 0.14) 100%);
-  }
-  
-  .txtl-wrapper .quarrix_catalog__wrapper h2 {
-    text-align: center;
-    margin: 0 0 40px;
-    letter-spacing: 0px;
-    color: #000;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 700;
-  }
-  
-  .txtl-wrapper .quarrix_catalog__wrapper .quarrix_catalog__iframe {
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #E4E4E4;
-  }
-  
-  .txtl-wrapper .quarrix_catalog__wrapper .quarrix_catalog__iframe iframe {
-    width: 100%;
-    height: 650px;
-    border: none;
-  }
-  
-  /* Quarrix faq section */
-  .txtl-wrapper .quarrix_faq_section {
-    padding: 80px 0 100px;
-    text-align: center;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section h2 {
-    text-align: center;
-    margin: 0 0 40px;
-    letter-spacing: 0px;
-    color: #000;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 700;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_title_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid #B1B1B1;
-    padding-bottom: 20px;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item:last-child .quarrix_faq_section__item_title_wrapper {
-    border-bottom: 1px solid transparent;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_title_wrapper .quarrix_faq_section__item_question {
-    color: #000;
-    font-size: 25px;
-    text-align: left;
-    line-height: 57px;
-    letter-spacing: 0px;
-    font-weight: 700;
-    margin: 15px 0 0;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_answer {
-    color: #fff;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0px;
-    font-weight: 400;
-    margin: 0;
-    padding: 25px 40px;
-    text-align: left;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_answer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_answer_wrapper ul {
-    color: #fff;
-    text-align: left;
-    list-style: auto;
-    display: flex;
     flex-direction: column;
-    gap: 10px;
+    padding: 30px 0;
+    gap: 30px;
   }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_close_icon {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_close_icon span {
-    background-color: #000;
-    width: 3px;
-    height: 18px;
-    display: inline-block;
-    position: absolute;
-    transform: rotate(90deg);
-    transition: 250ms ease-in-out transform;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_close_icon span:first-child {
-    transform: rotate(0deg);
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item.active .quarrix_faq_section__item_close_icon span:first-child {
-    transform: rotate(90deg);
-  }
-  
-  .quarrix_faq_section__item_answer_wrapper {
-    background-color: #055641;
-    border-radius: 4px;
-    overflow: hidden;
-    max-height: 0;
-    transition: 250ms ease-in-out max-height;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item.active .quarrix_faq_section__item_answer_wrapper {
-    max-height: 600px;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item.active .quarrix_faq_section__item_title_wrapper {
-    border-bottom: 1px solid transparent;
-  }
-  
-  .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__button {
-    display: inline-flex;
-    margin: 80px auto 0;
-  }
-  
-  /* Quarrix map section */
-  .txtl-wrapper .quarrix_map_section {
-    padding: 120px 0;
-    background-image: url('https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/map-image.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .txtl-wrapper .quarrix_map_section .quarrix_map_section__wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .txtl-wrapper .quarrix_map_section .quarrix_map_section__content {
-    max-width: 415px;
-    box-shadow: 0px 2px 7px 0px #00000063;
-    border-radius: 2px;
-    padding: 40px 30px;
-    background-color: rgba(5, 86, 65, 0.9);
-  }
-  
-  .txtl-wrapper .quarrix_map_section .quarrix_map_section__content h2 {
-    color: #fff;
-    letter-spacing: 0px;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 55px;
-    margin: 0 0 15px;
-  }
-  
-  .txtl-wrapper .quarrix_map_section .quarrix_map_section__content p {
-    color: #fff;
-    letter-spacing: 0px;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
-    margin: 0 0 30px;
-  }
-  
-  .txtl-wrapper .quarrix_map_section .quarrix_map_section__content .quarrix_map_section__button {
-    display: inline-flex;
-  }
-  
-  /* Quarrix Homepage responsive */
-  @media(max-width: 992px) {
-    .txtl-wrapper .btn {
-      font-size: 16px;
-      line-height: 18px;
-      padding: 15px 30px;
-    }
-  
-    .txtl-wrapper .quarrix_hero {
-      padding: 60px 0;
-    }
-  
-    .txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper h1 {
-      font-size: 50px;
-      line-height: 55px;
-    }
-  
-    .txtl-wrapper .quarrix_hero .quarrix_hero__text_wrapper p {
-      font-size: 23px;
-      line-height: 32px;
-    }
-  
-    .txtl-wrapper .quarrix_multi_column {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .txtl-wrapper .quarrix_product_section .quarrix_product_section__row {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .txtl-wrapper .quarrix_video_section .quarrix_video_section__wrapper {
-      flex-direction: column;
-    }
-  
-    .txtl-wrapper .quarrix_video_section__video_wrapper,
-    .txtl-wrapper .quarrix_video_section__text_wrapper {
-      width: 100%;
-    }
-  
-    .txtl-wrapper .quarrix_video_section__button_wrapper {
-      flex-direction: column;
-      align-items: start;
-    }
-  
-    .txtl-wrapper .quarrix_video_section .quarrix_video_section__side_image {
-      display: none;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery {
-      padding: 60px 20px;
-    }
-    
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__wrapper_top {
-      flex-direction: column;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left {
-      flex-direction: column;
-      width: 100%;
-      gap: 40px;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left_image {
-      flex-direction: row;
-      width: 100%;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left_text {
-      width: 100%;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_right {
-      width: 100%;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_left img {
-      max-height: 200px;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__top_right img {
-      max-height: 400px;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__wrapper_bottom {
-      flex-direction: column;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left {
-      width: 100%
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_two-image img:first-child {
-      max-height: 200px;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right {
-      width: 100%
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_one-image img {
-      max-height: 550px;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_left_two-image img:last-child {
-      max-height: 335px;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left img:first-child {
-      max-height: 200px;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_right img {
-      max-height: 200px;
-    } 
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__bottom_right_left img:last-child {
-      max-height: 335px;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right {
-      width: 35%;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left {
-      width: 65%;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left h2 {
-      font-size: 35px;
-      line-height: 37px;
-    }
-  
-    .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_title_wrapper .quarrix_faq_section__item_question {
-      font-size: 20px;
-      line-height: 30px;
-    }
-  
-    .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__item_wrapper .quarrix_faq_section__item_answer {
-      font-size: 16px;
-      line-height: 25px;
-      padding: 20px 25px;
-    }
-  
-    .txtl-wrapper .quarrix_map_section .quarrix_map_section__content h2 {
-      font-size: 40px;
-      line-height: 45px;
-    }
-  
-    .txtl-wrapper .quarrix_map_section .quarrix_map_section__content p {
-      font-size: 18px;
-      line-height: 24px;
-    }
-  
-    .txtl-wrapper .quarrix_map_section {
-      padding: 60px 0;
-    }
-  
-    .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item {
-      padding: 30px 40px;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery .quarrix_ventilation_gallery__side_vector {
-      bottom: -340px;
-      max-width: 200px;
-    }
-  
-    .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-2 {
-      border-radius: 8px 0 0 8px;
-    }
-  
-    .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item.item-3 {
-      border-radius: 0 8px 8px 0;
-    }
-  
-    .txtl-wrapper .quarrix_video_section {
-      padding: 60px 0;
-    }
-  
-    .txtl-wrapper .quarrix_video_section__text_wrapper h2 {
-      font-size: 35px;
-      line-height: 39px;
-    }
-  
-    .txtl-wrapper .quarrix_video_section .quarrix_video_section__side_svg {
-      bottom: -298px;
-      max-width: 180px;
-    }
-  
-    .txtl-wrapper .quarrix_product_section {
-      padding: 60px 0;
-    }
-  
-    .txtl-wrapper .quarrix_product_section h2 {
-      font-size: 40px;
-      line-height: 45px;
-    }
-  
-    .txtl-wrapper .quarrix_product_section .quarrix_product_section__item {
-      min-height: 250px;
-      max-height: 250px;
-    }
-  
-    .txtl-wrapper .quarrix_catalog__wrapper h2 {
-      font-size: 40px;
-      line-height: 45px;
-      margin: 0 0 20px;
-    }
-  
-    .txtl-wrapper .quarrix_catalog__wrapper .quarrix_catalog__iframe iframe {
-      height: 300px;
-    }
-  
-    .txtl-wrapper .quarrix_faq_section {
-      padding: 60px 0;
-    }
-  
-    .txtl-wrapper .quarrix_faq_section h2 {
-      font-size: 40px;
-      line-height: 45px;
-    }
-  
-    .txtl-wrapper .quarrix_ventilation_gallery h2 {
-      font-size: 40px;
-      line-height: 45px;
-    }
-  
-    .txtl-wrapper .quarrix_faq_section .quarrix_faq_section__button {
-      margin: 50px auto 0;
-    }
-  
-    .txtl-wrapper .quarrix_catalog__wrapper .quarrix_catalog__iframe {
-      padding: 20px 10px;
-    }
-  
-    .txtl-wrapper .quarrix_catalog__wrapper {
-      padding: 175px 20px 50px;
-    }
-  }
-  
-  @media(max-width: 750px) {
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right_img {
-      max-width: 420px;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right {
-      width: 40%;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left {
-      width: 60%;
-    }
-  }
-  
-  @media(max-width: 576px) {
-    .txtl-wrapper .quarrix_hero .quarrix_hero__button_wrapper {
-      flex-direction: column;
-    }
-  
-    .txtl-wrapper .quarrix_multi_column {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-    .txtl-wrapper .quarrix_product_section .quarrix_product_section__row {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-    .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item {
-      border-radius: 8px !important;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row {
-      flex-direction: column;
-      padding: 30px 0;
-      gap: 30px;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right {
-      width: 100%;
-      justify-content: start;
-      position: relative;
-      z-index: 2;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left {
-      width: 100%;
-      padding: 0;
-      position: static;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right_img {
-      position: static;
-      max-width: 100%;
-      width: 100%;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left h2 {
-      max-width: 100%;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__vector {
-      z-index: 1;
-      max-width: 150px;
-      height: auto;
-      bottom: unset;
-      top: 0;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__button {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 130px;
-      justify-content: center;
-      width: 100%;
-    }
-  
-    .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left::after {
-      display: none;
-    }
-  
-    .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item img {
-      max-width: 230px;
-    }
-  }
-  /* Quarrix Homepage style end */
-  
-  /* QUARRIX LANDING PAGE CSS START */
-  
-  .txtl-wrapper .quarrix-lp-hero {
-    padding: 200px 0;
-    position: relative;
-  }
-  
-  .txtl-wrapper .quarrix-lp-hero__wrap {
-    display: flex;
-  }
-  
-  .txtl-wrapper .quarrix-lp-hero__copy,
-  .txtl-wrapper .quarrix-lp-hero__image {
-    width: 50%;
-  }
-  
-  .txtl-wrapper .quarrix-lp-hero__image img {
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right {
     width: 100%;
-  }
-  
-  .txtl-wrapper .quarrix-lp-hero__banner-wrap img {
-    position: absolute;
-    right: 0;
-    top: 30px;
+    justify-content: start;
+    position: relative;
     z-index: 2;
   }
-  
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left {
+    width: 100%;
+    padding: 0;
+    position: static;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__right_img {
+    position: static;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left h2 {
+    max-width: 100%;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__vector {
+    z-index: 1;
+    max-width: 150px;
+    height: auto;
+    bottom: unset;
+    top: 0;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left::after {
+    display: none;
+  }
+
+  .txtl-wrapper .quarrix_multi_column .quarrix_multi_column__item img {
+    max-width: 230px;
+  }
+}
+/* Quarrix Homepage style end */
+
+/* QUARRIX LANDING PAGE CSS START */
+
+.txtl-wrapper .quarrix-lp-hero {
+  padding: 200px 0;
+  position: relative;
+  max-width: 3000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.txtl-wrapper .quarrix-lp-hero__wrap {
+  display: flex;
+}
+
+.txtl-wrapper .quarrix-lp-hero__copy,
+.txtl-wrapper .quarrix-lp-hero__image {
+  width: 50%;
+}
+
+.txtl-wrapper .quarrix-lp-hero__image img {
+  width: 100%;
+  height: 545px;
+  object-fit: cover;
+}
+
+.txtl-wrapper .quarrix-lp-hero__banner-wrap img {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  z-index: 2;
+}
+
+.txtl-wrapper .quarrix-lp-hero__banner-wrap img:last-child {
+  top: 15px;
+}
+
+.txtl-wrapper .quarrix-lp-hero__image-absolute {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.txtl-wrapper .quarrix-lp-hero__image-absolute::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  width: 125%;
+  height: 80px;
+  background: #fff;
+  filter: drop-shadow(0 -13mm 3mm rgb(255, 255, 255));
+}
+
+.txtl-wrapper .quarrix-lp-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.txtl-wrapper .quarrix-lp-hero__heading {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #1a1a1a !important;
+  margin: 0;
+}
+
+.txtl-wrapper .quarrix-lp-hero__description {
+  font-size: 18px;
+  color: #373737 !important;
+}
+
+.txtl-wrapper .experience-the-benefits {
+  padding: 80px 0 70px;
+}
+
+.txtl-wrapper .experience-the-benefits__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.txtl-wrapper .experience-the-benefits__wrap {
+  display: flex;
+  gap: 52px;
+}
+
+.txtl-wrapper .experience-the-benefits__wrap .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.txtl-wrapper .experience-the-benefits__wrap .swiper .swiper-wrapper {
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.txtl-wrapper .experience-the-benefits__card {
+  max-width: 352px;
+}
+
+.txtl-wrapper .experience-the-benefits__card img {
+  max-width: 352px;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  max-height: 228px;
+  object-fit: contain;
+}
+
+.txtl-wrapper .experience-the-benefits__card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  color: #1A1A1A !important;
+}
+
+.txtl-wrapper .experience-the-benefits__card p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #1A1A1A !important;
+}
+
+.txtl-wrapper .experience-the-benefits__heading {
+  color: #1a1a1a !important;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 0;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1 {
+  background-color: #69abc7;
+  position: relative;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1__wrap {
+  display: flex;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1__copy,
+.txtl-wrapper .quarrix-lp-banner-v1__image {
+  width: 50%;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1__image {
+  position: relative;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1__copy {
+  position: relative;
+  padding: 90px 0px 90px 140px;
+  z-index: 2;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1__copy h2 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1__copy p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1__image svg {
+  position: absolute;
+  height: 100%;
+  width: 425px;
+  left: -220px;
+  z-index: 1;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v1__vector {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.txtl-wrapper .quarrix-lp-subscription {
+  padding: 125px 0;
+}
+
+.txtl-wrapper .quarrix-lp-subscription__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.txtl-wrapper .quarrix-lp-subscription__heading h2 {
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 0;
+  margin: 0;
+  color: #1A1A1A !important;
+}
+
+.txtl-wrapper .quarrix-lp-subscription__copy form input {
+  width: 60%;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  padding: 13px;
+  font-size: 16px;
+}
+
+.txtl-wrapper .quarrix-lp-subscription__copy span {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000 !important;
+}
+
+.txtl-wrapper .quarrix-lp-subscription__description {
+  font-size: 18px;
+  line-height: 28px;
+  color: #373737 !important;
+  box-shadow: 0px 0px 19.5px 0px #ffffffcc;
+  margin-bottom: 16px;
+  max-width: 520px;
+}
+
+.txtl-wrapper .quarrix-lp-subscription__copy form button {
+  background: #055641;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v2 {
+  padding: 0 20px;
+  background-color: #76b4ce;
+  max-width: unset;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 4px 14px 0px #00000040;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__row {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.txtl-wrapper
+  .quarrix-lp-banner-v2
+  .quarrix-lp-banner-v2__row
+  .quarrix-lp-banner-v2__left
+  h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 63px;
+  letter-spacing: 0px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.txtl-wrapper
+  .quarrix-lp-banner-v2
+  .quarrix-lp-banner-v2__row
+  .quarrix-lp-banner-v2__left {
+  width: 60%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.txtl-wrapper
+  .quarrix-lp-banner-v2
+  .quarrix-lp-banner-v2__row
+  .quarrix-lp-banner-v2__left::after {
+  content: "";
+  position: absolute;
+  right: -250px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-image: url("https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/Group%20627423%20(1)%201%20(1).svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.txtl-wrapper
+  .quarrix-lp-banner-v2
+  .quarrix-lp-banner-v2__row
+  .quarrix-lp-banner-v2__right {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+
+.txtl-wrapper
+  .quarrix-lp-banner-v2
+  .quarrix-lp-banner-v2__row
+  .quarrix-lp-banner-v2__right_img {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  max-width: 730px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.txtl-wrapper
+  .quarrix-lp-banner-v2
+  .quarrix-lp-banner-v2__row
+  .quarrix-lp-banner-v2__button {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+}
+
+.txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__vector {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 100%;
+  width: auto;
+}
+
+@media screen and (max-width: 1650px) {
+  .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__row .quarrix-lp-banner-v2__right_img {
+    max-width: 630px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__row .quarrix-lp-banner-v2__right_img {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .txtl-wrapper .quarrix-lp-hero {
+    padding: 190px 0;
+  }
+
+  .txtl-wrapper .quarrix_banner .quarrix_banner__row .quarrix_banner__left::after {
+    right: -78px;
+  }
+
+  .txtl-wrapper .quarrix-lp-hero__banner-wrap img {
+    width: 80%;
+  }
+
   .txtl-wrapper .quarrix-lp-hero__banner-wrap img:last-child {
     top: 15px;
+    width: 25%;
   }
-  
-  .txtl-wrapper .quarrix-lp-hero__image-absolute {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-  }
-  
-  .txtl-wrapper .quarrix-lp-hero__image-absolute::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: -30px;
-    width: 125%;
-    height: 80px;
-    background: #fff;
-    filter: drop-shadow(0 -13mm 3mm rgb(255, 255, 255));
-  }
-  
-  .txtl-wrapper .quarrix-lp-container {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
+
   .txtl-wrapper .quarrix-lp-hero__heading {
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 0;
-    color: #1a1a1a;
-    margin: 0;
+    font-size: 50px;
+    line-height: 53px;
   }
-  
-  .txtl-wrapper .quarrix-lp-hero__description {
-    font-size: 18px;
-    color: #373737;
+
+  .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__row .quarrix-lp-banner-v2__right_img {
+    max-width: 490px;
   }
-  
-  .txtl-wrapper .experience-the-benefits {
-    padding: 80px 0 70px;
+
+  .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__row .quarrix-lp-banner-v2__left::after {
+    right: -200px;
   }
-  
-  .txtl-wrapper .experience-the-benefits__container {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .txtl-wrapper .experience-the-benefits__wrap {
+}
+
+@media screen and (max-width: 992px) {
+  .txtl-wrapper .quarrix-lp-hero {
+    overflow: hidden;
+    padding: 80px 0 100px;
     display: flex;
-    gap: 52px;
+    flex-direction: column-reverse;
   }
-  
-  .txtl-wrapper .experience-the-benefits__wrap .swiper {
+  .txtl-wrapper .quarrix-lp-hero__banner-wrap img {
+    width: 150%;
+    top: 20px;
+    right: -65%;
+  }
+  .txtl-wrapper .quarrix-lp-hero__image img {
+    height: auto;
+  }
+  .txtl-wrapper .quarrix-lp-subscription__heading h2 {
+    font-size: 50px;
+    line-height: 53px;
+  }
+  .txtl-wrapper .quarrix-lp-hero__banner-wrap img:last-child {
+    width: 39%;
+    right: 0;
+    top: 15px;
+  }
+  .txtl-wrapper .quarrix-lp-hero__wrap {
+    flex-direction: column-reverse;
+  }
+  .txtl-wrapper .quarrix-lp-hero__copy,
+  .txtl-wrapper .quarrix-lp-hero__image {
     width: 100%;
-    height: 100%;
   }
-  
-  .txtl-wrapper .experience-the-benefits__wrap .swiper .swiper-wrapper {
-    justify-content: space-between;
-    gap: 10px;
-  }
-  
-  .txtl-wrapper .experience-the-benefits__card {
-    max-width: 352px;
-  }
-  
-  .txtl-wrapper .experience-the-benefits__card img {
-    max-width: 352px;
-    width: 100%;
-    border: 1px solid #c2c2c2;
-    max-height: 228px;
-    object-fit: contain;
-  }
-  
-  .txtl-wrapper .experience-the-benefits__card h3 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    margin-bottom: 0;
-    letter-spacing: 0;
-  }
-  
-  .txtl-wrapper .experience-the-benefits__card p {
-    font-size: 16px;
-    line-height: 32px;
-  }
-  
-  .txtl-wrapper .experience-the-benefits__heading {
-    color: #1a1a1a;
-    font-weight: 700;
-    font-size: 60px;
-    letter-spacing: 0;
-  }
-  
-  .txtl-wrapper .quarrix-lp-banner-v1 {
-    background-color: #69abc7;
+  .txtl-wrapper .quarrix-lp-hero__image-absolute {
+    bottom: unset;
     position: relative;
+    right: 0;
   }
-  
+  .txtl-wrapper .quarrix-lp-hero__image-absolute::after {
+    height: 45px;
+    filter: drop-shadow(0 -4mm 2mm rgb(255, 255, 255));
+  }
+  .txtl-wrapper .quarrix-lp-banner-v1__image svg {
+    display: none;
+  }
+  .txtl-wrapper .quarrix-lp-banner-v1__vector {
+    width: 100%;
+    height: 50%;
+    bottom: unset;
+  }
+  .txtl-wrapper .experience-the-benefits .experience-the-benefits__heading {
+    font-size: 50px;
+    line-height: 53px;
+    margin: 0 0 40px;
+  }
+  .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__row .quarrix-lp-banner-v2__left h2 {
+    font-size: 50px;
+    line-height: 53px;
+  }
   .txtl-wrapper .quarrix-lp-banner-v1__wrap {
-    display: flex;
+    flex-direction: column;
   }
-  
   .txtl-wrapper .quarrix-lp-banner-v1__copy,
   .txtl-wrapper .quarrix-lp-banner-v1__image {
-    width: 50%;
-  }
-  
-  .txtl-wrapper .quarrix-lp-banner-v1__image {
-    position: relative;
-  }
-  
-  .txtl-wrapper .quarrix-lp-banner-v1__copy {
-    position: relative;
-    padding: 90px 0px 90px 140px;
-    z-index: 2;
-  }
-  
-  .txtl-wrapper .quarrix-lp-banner-v1__copy h2 {
-    color: #fff;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: 0;
-    margin: 0;
-  }
-  
-  .txtl-wrapper .quarrix-lp-banner-v1__copy p {
-    color: #fff;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0;
-  }
-  
-  .txtl-wrapper .quarrix-lp-banner-v1__image svg {
-    position: absolute;
-    height: 100%;
-    width: 425px;
-    left: -220px;
-    z-index: 1;
-  }
-  
-  .txtl-wrapper .quarrix-lp-banner-v1__image img {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    z-index: 0;
   }
-  
-  .txtl-wrapper .quarrix-lp-banner-v1__vector {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100%;
+  .txtl-wrapper .quarrix-lp-banner-v1__copy {
+    padding: 40px 20px;
   }
-  
-  .txtl-wrapper .quarrix-lp-subscription {
-    padding: 125px 0;
-    background: url("https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/Siding%20Panels%20Background.png");
-  }
-  
-  .txtl-wrapper .quarrix-lp-subscription__wrap {
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-  }
-  
-  .txtl-wrapper .quarrix-lp-subscription__heading h2 {
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: 0;
-    margin: 0;
-  }
-  
-  .txtl-wrapper .quarrix-lp-subscription__copy form input {
-    width: 60%;
-    border: 1px solid #d9d9d9;
-    border-radius: 2px;
-    padding: 13px;
-    font-size: 16px;
-  }
-  
-  .txtl-wrapper .quarrix-lp-subscription__copy span {
-    margin-top: 8px;
-    font-size: 12px;
-    font-weight: 300;
-    color: #000;
-  }
-  
-  .txtl-wrapper .quarrix-lp-subscription__description {
-    font-size: 18px;
-    line-height: 28px;
-    color: #373737;
-    box-shadow: 0px 0px 19.5px 0px #ffffffcc;
-    margin-bottom: 16px;
-    max-width: 520px;
-  }
-  
-  .txtl-wrapper .quarrix-lp-subscription__copy form button {
-    background: #055641;
-    padding: 12px 20px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-  }
-  
-  .txtl-wrapper .quarrix-lp-banner-v2 {
-    padding: 0 20px;
-    background-color: #76b4ce;
-    max-width: unset;
-    margin: 0 auto;
+  .txtl-wrapper .quarrix-lp-banner-v1__image img {
     position: relative;
-    z-index: 1;
-    border-radius: 8px;
-    box-shadow: 0px 4px 14px 0px #00000040;
+    display: block;
   }
-  
+  .txtl-wrapper
+    .quarrix-lp-banner-v2
+    .quarrix-lp-banner-v2__row
+    .quarrix-lp-banner-v2__left::after {
+    display: none;
+  }
+  .txtl-wrapper .quarrix-lp-subscription__wrap {
+    flex-direction: column;
+  }
+  .txtl-wrapper .quarrix-lp-banner-v2 {
+    padding: 0;
+  }
   .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__row {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    flex-direction: column;
   }
-  
+  .txtl-wrapper
+    .quarrix-lp-banner-v2
+    .quarrix-lp-banner-v2__row
+    .quarrix-lp-banner-v2__left {
+    width: 100%;
+  }
+  .txtl-wrapper
+    .quarrix-lp-banner-v2
+    .quarrix-lp-banner-v2__row
+    .quarrix-lp-banner-v2__right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .txtl-wrapper
+    .quarrix-lp-banner-v2
+    .quarrix-lp-banner-v2__row
+    .quarrix-lp-banner-v2__button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    z-index: 4;
+  }
+  .txtl-wrapper
+    .quarrix-lp-banner-v2
+    .quarrix-lp-banner-v2__row
+    .quarrix-lp-banner-v2__right_img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    z-index: 3;
+  }
+  .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__vector {
+    height: 50%;
+    top: 17%;
+  }
+
+  .txtl-wrapper .quarrix-lp-subscription {
+    padding: 60px 0 100px;
+  }
+  .txtl-wrapper .quarrix-lp-subscription__wrap {
+    gap: 20px;
+  }
+  .txtl-wrapper .quarrix-lp-subscription__copy form input {
+    width: 100%;
+  }
+  .txtl-wrapper .quarrix-lp-subscription__copy form button {
+    width: 100%;
+  }
+
+  .txtl-wrapper .experience-the-benefits__card {
+    max-width: 100%;
+  }
+  .txtl-wrapper .experience-the-benefits__card img {
+    max-width: 100%;
+  }
   .txtl-wrapper
     .quarrix-lp-banner-v2
     .quarrix-lp-banner-v2__row
     .quarrix-lp-banner-v2__left
     h2 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 63px;
-    letter-spacing: 0px;
-    color: #fff;
-    position: relative;
-    z-index: 2;
+    padding: 0 10px;
   }
-  
-  .txtl-wrapper
-    .quarrix-lp-banner-v2
-    .quarrix-lp-banner-v2__row
-    .quarrix-lp-banner-v2__left {
-    width: 60%;
-    padding: 70px 0;
-    position: relative;
-  }
-  
-  .txtl-wrapper
-    .quarrix-lp-banner-v2
-    .quarrix-lp-banner-v2__row
-    .quarrix-lp-banner-v2__left::after {
-    content: "";
-    position: absolute;
-    right: -250px;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    background-image: url("https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/Group%20627423%20(1)%201%20(1).svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  
-  .txtl-wrapper
-    .quarrix-lp-banner-v2
-    .quarrix-lp-banner-v2__row
-    .quarrix-lp-banner-v2__right {
-    width: 40%;
-    display: flex;
-    justify-content: end;
-  }
-  
-  .txtl-wrapper
-    .quarrix-lp-banner-v2
-    .quarrix-lp-banner-v2__row
-    .quarrix-lp-banner-v2__right_img {
-    position: absolute;
-    height: 100%;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    width: 100%;
-    max-width: 550px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .txtl-wrapper
-    .quarrix-lp-banner-v2
-    .quarrix-lp-banner-v2__row
-    .quarrix-lp-banner-v2__button {
-    position: relative;
-    z-index: 1;
-    margin-top: 0;
-  }
-  
-  .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__vector {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 0;
-    height: 100%;
-    width: auto;
-  }
-  
-  @media screen and (max-width: 992px) {
-    .txtl-wrapper .quarrix-lp-hero {
-      overflow: hidden;
-      padding: 80px 0 100px;
-      display: flex;
-      flex-direction: column-reverse;
-    }
-    .txtl-wrapper .quarrix-lp-hero__banner-wrap img {
-      width: 150%;
-      top: 20px;
-      right: -65%;
-    }
-    .txtl-wrapper .quarrix-lp-hero__banner-wrap img:last-child {
-      width: 39%;
-      right: 0;
-      top: 15px;
-    }
-    .txtl-wrapper .quarrix-lp-hero__wrap {
-      flex-direction: column-reverse;
-    }
-    .txtl-wrapper .quarrix-lp-hero__copy,
-    .txtl-wrapper .quarrix-lp-hero__image {
-      width: 100%;
-    }
-    .txtl-wrapper .quarrix-lp-hero__image-absolute {
-      bottom: unset;
-      position: relative;
-      right: 0;
-    }
-    .txtl-wrapper .quarrix-lp-hero__image-absolute::after {
-      height: 45px;
-      filter: drop-shadow(0 -4mm 2mm rgb(255, 255, 255));
-    }
-    .txtl-wrapper .quarrix-lp-banner-v1__image svg {
-      display: none;
-    }
-    .txtl-wrapper .quarrix-lp-banner-v1__vector {
-      width: 100%;
-      height: 50%;
-      bottom: unset;
-    }
-    .txtl-wrapper .quarrix-lp-banner-v1__wrap {
-      flex-direction: column;
-    }
-    .txtl-wrapper .quarrix-lp-banner-v1__copy,
-    .txtl-wrapper .quarrix-lp-banner-v1__image {
-      width: 100%;
-    }
-    .txtl-wrapper .quarrix-lp-banner-v1__copy {
-      padding: 40px 20px;
-    }
-    .txtl-wrapper .quarrix-lp-banner-v1__image img {
-      position: relative;
-      display: block;
-    }
-    .txtl-wrapper
-      .quarrix-lp-banner-v2
-      .quarrix-lp-banner-v2__row
-      .quarrix-lp-banner-v2__left::after {
-      display: none;
-    }
-    .txtl-wrapper .quarrix-lp-subscription__wrap {
-      flex-direction: column;
-    }
-    .txtl-wrapper .quarrix-lp-banner-v2 {
-      padding: 0;
-    }
-    .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__row {
-      flex-direction: column;
-    }
-    .txtl-wrapper
-      .quarrix-lp-banner-v2
-      .quarrix-lp-banner-v2__row
-      .quarrix-lp-banner-v2__left {
-      width: 100%;
-    }
-    .txtl-wrapper
-      .quarrix-lp-banner-v2
-      .quarrix-lp-banner-v2__row
-      .quarrix-lp-banner-v2__right {
-      flex-direction: column;
-      width: 100%;
-    }
-    .txtl-wrapper
-      .quarrix-lp-banner-v2
-      .quarrix-lp-banner-v2__row
-      .quarrix-lp-banner-v2__button {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 10px;
-      z-index: 4;
-    }
-    .txtl-wrapper
-      .quarrix-lp-banner-v2
-      .quarrix-lp-banner-v2__row
-      .quarrix-lp-banner-v2__right_img {
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-      z-index: 3;
-    }
-    .txtl-wrapper .quarrix-lp-banner-v2 .quarrix-lp-banner-v2__vector {
-      height: 50%;
-      top: 17%;
-    }
-  
-    .txtl-wrapper .quarrix-lp-subscription {
-      padding: 60px 0 100px;
-    }
-    .txtl-wrapper .quarrix-lp-subscription__wrap {
-      gap: 20px;
-    }
-    .txtl-wrapper .quarrix-lp-subscription__copy form input {
-      width: 100%;
-    }
-    .txtl-wrapper .quarrix-lp-subscription__copy form button {
-      width: 100%;
-    }
-  
-    .txtl-wrapper .experience-the-benefits__card {
-      max-width: 100%;
-    }
-    .txtl-wrapper .experience-the-benefits__card img {
-      max-width: 100%;
-    }
-    .txtl-wrapper
-      .quarrix-lp-banner-v2
-      .quarrix-lp-banner-v2__row
-      .quarrix-lp-banner-v2__left
-      h2 {
-      padding: 0 10px;
-    }
-  }
+}
