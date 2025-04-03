@@ -1,4 +1,4 @@
-/* Version 1.1.1 */
+/* Version 1.1.2 */
 /**************** GLOBAL TXTL CLASSES ******************/
 
 * {
@@ -10,6 +10,12 @@
 body {
   padding: 0;
   margin: 0;
+}
+
+/* This is required for removing the default padding of the Kentico container */
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .txtl-wrapper {
