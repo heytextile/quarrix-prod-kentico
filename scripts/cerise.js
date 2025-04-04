@@ -1,6 +1,17 @@
-// Version 1.0.0
+// Version 1.1.0
 
 (function () {
+    // Create and append the <link> tag
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
+    document.head.appendChild(link);
+
+    // Create and append the <script> tag
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+    document.head.appendChild(script);
+
     const videoSection = document.querySelector('.quarrix_video_section__video');
     
     if (videoSection) {
@@ -33,19 +44,22 @@
     const cardsSwiper = document.querySelector('.cards-swiper');
 
     if (cardsSwiper) {
-        let swiper = new Swiper(cardsSwiper, {
-            spaceBetween: 10,
-            slidesPerView: 1,
-            navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            },
-        });
+        setTimeout(() => {
+            let swiper = new Swiper(cardsSwiper, {
+                spaceBetween: 10,
+                slidesPerView: 1,
+                loop: true,
+                navigation: {
+                    nextEl: ".cards-swiper__right",
+                    prevEl: ".cards-swiper__left",
+                },
+                breakpoints: {
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                },
+            });
+        }, 500);
     }
-})(); 
+})();
